@@ -1,0 +1,32 @@
+---
+title: "Blank .Rmd document"
+author: Tom Ellis
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  bookdown::pdf_book:
+    toc: yes
+  bookdown::word_document2: null
+  html_document:
+    df_print: paged
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: yes
+documentclass: article
+header-includes:
+    - \usepackage{setspace}\doublespacing
+# fontfamily: mathpazo
+# fontsize: 12pt
+# geometry: margin=1in
+bibliography: /datadisk/Dropbox/bibtex_files/tellis.bib
+csl: /datadisk/Dropbox/bibtex_files/am-nat.csl
+# endnote: no
+abstract: ""
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=T, cache.lazy=T)
+format(Sys.time(), '%d %B, %Y')
+```
